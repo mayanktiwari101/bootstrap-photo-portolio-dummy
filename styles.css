@@ -1,0 +1,38 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)
+    ), url('./assets/images/image1.jpg') no-repeat center center/cover;
+}
+
+.nav-menu {
+    background: linear-gradient(
+        rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)
+    );
+    padding: 30px;
+    transition: all .7s;
+}
+
+.menu-item {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #eee;
+}
+
+.menu-item :hover{
+    color: #70aed2;
+}
+
+.nav-active {
+    color: #70aed2;
+}
+
+.line1, .line2, .line3 {
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+}
