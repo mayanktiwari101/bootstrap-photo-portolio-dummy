@@ -2,6 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* start-of-header */
 header {
     height: 100vh;
     background: linear-gradient(
@@ -9,6 +10,7 @@ header {
     ), url('./assets/images/image1.jpg') no-repeat center center/cover;
 }
 
+/* navbar */
 .nav-menu {
     background: linear-gradient(
         rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)
@@ -55,3 +57,37 @@ header {
     padding: 5px 30px;
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
 }
+/* end-of-navbar */
+/* start-of-banner */
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-heading {
+    animation-name: anim;
+    animation-duration: 2s;
+}
+
+.banner-par {
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+/* end-of-banner */
+
+@keyframes anim {
+    0% {
+        transform: translate(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* end-of-header */
