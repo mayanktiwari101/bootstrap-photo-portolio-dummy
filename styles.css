@@ -9,7 +9,6 @@ header {
         rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)
     ), url('./assets/images/image1.jpg') no-repeat center center/cover;
 }
-
 /* navbar */
 .nav-menu {
     background: linear-gradient(
@@ -91,3 +90,70 @@ header {
     }
 }
 /* end-of-header */
+
+/* mission */
+.mission {
+    background: #151f20;
+}
+
+.underline {
+    width: 150px;
+    border: 3px solid #eee;
+    margin: auto;
+}   
+.fromLeft {
+    animation-name: fromLeft;
+    animation-duration: 3s;
+}
+
+.fromRight {
+    animation-name: fromRight;
+    animation-duration: 3s;
+}
+
+@keyframes fromLeft {
+
+    0% {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fromRight {
+    0% {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* end-of-mission */
+
+/* collection */
+.card-shadow {
+    box-shadow: 5px 8px 20px #444;
+}
+
+.heading {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: #222;
+    width: 70%;
+    cursor: pointer;
+    opacity: .7;
+    transition: all .5s;
+}
+
+.heading:hover {
+    opacity: 1;
+}
+/* end-of-collection */
