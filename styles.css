@@ -273,7 +273,7 @@ header {
         rgba(21, 31, 32, .95) 50%,
         transparent 50%
     ),
-    url('https://placehold.co/1400x400') no-repeat;
+    url('https://placehold.co/1400x500') no-repeat;
 }
 
 .input {
@@ -292,10 +292,15 @@ header {
     border-bottom: 2px solid #f5593d;
 }
 
-.submit-buttom:hover {
+.submit-button {
     background: #f5593d;
     color: #eee;
     transition: all .4s;
+}
+
+.submit-button :hover{
+    background: #f9793d;
+    transform: translateY(-3px);
 }
 
 .label {
@@ -326,3 +331,17 @@ header {
 }
 /* end-of-contact */
 
+
+/* footer */
+
+.footer-link {
+    color: #eee;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+.footer-link:hover {
+    color: #70aed2;
+    text-decoration: none;
+}
+/* end-of-footer */
