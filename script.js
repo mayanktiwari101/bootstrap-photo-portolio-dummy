@@ -29,5 +29,30 @@ $(document).ready(function () {
             $('.mission-text').removeClass('fromRight');
         }
     });
-    
+
+    $(window).scroll(function() {
+        let scrollPosition = $(window).scrollTop();
+        console.log('scrollPosition: '+scrollPosition);
+        $('.menu-item').each(function() {
+            let section = $(this).attr("href");
+            console.log('section: '+section);
+            let target = $(section).offset();
+            if(!target){
+                console.log('target is null/underfined: ', target);
+                return;
+            }
+            console.log('target:', target);
+            let sectionTop = target.top;
+            console.log('sectionTop: '+sectionTop);
+            let sectionHeight = $(section).outerHeight();
+            console.log('sectionHeight: '+sectionHeight);
+            if(
+                scrollPosition >= sectionTop - 100 &&
+                scrollPosition < sectionTop + sectionHeight - 100
+            ) {
+                $('menu-item').removeClass('nav-active');
+                $(this).addClass('nav-active');
+            }
+        });
+    });
 });
